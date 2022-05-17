@@ -1,37 +1,33 @@
+
+html { 
+    background: url("pictures/etch-a-sketch-screen.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100% 100%;
+}
+
 body {
-    background-color: white;
     display: flex;
     flex-direction: column;
-}
-#header {
-    text-align: center;
+    justify-content: center;
 }
 
-#middleOfPage {
+
+#container {
     display: flex;
+    width: 576px;
+    height: 576px;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    position: relative;
 }
 
-.button {
+#buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
-
-
-    #container {
-        display: flex;
-        width: 576px;
-        height: 576px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 5%;
-        margin-bottom: 10px;
-        flex-wrap: wrap;
-        flex-shrink: 0;
-    }
-
-
-
-
 
 #footer {
     display: flex;
