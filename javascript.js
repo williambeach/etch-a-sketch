@@ -1,7 +1,7 @@
 function add16X16Grids() {
     container = document.getElementById("container");
-    width = (576 / 16);
-    height = (576 / 16);
+    width = (850 / 16);
+    height = (640 / 16);
     for (let i = 0; i < 256; i++) {
         childDiv = document.createElement("div");
         childDiv.classList.add("grid");
