@@ -1,0 +1,56 @@
+body {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    text-align: center;
+}
+
+#middleOfPage {
+    display: flex;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    width: 576px;
+    height: 576px;
+    border: solid 0.5px black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+#footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+
+
+.grid16x16 {
+    width: 35px;
+    height: 35px;
+    border: solid 0.5px black;
+}
+
+.grid32x32 {
+    width: 17px;
+    height: 17px;
+    border: solid 0.5px black;
+}
+
+.grid64x64 {
+    width: 8px;
+    height: 8px;
+    border: solid 0.5px black;
+}
+
