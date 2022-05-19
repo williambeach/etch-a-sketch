@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
-    margin-top: 200px;
+    margin-top: 160px;
     padding-top: 40px;
     
 }
@@ -36,7 +36,6 @@ body {
 #buttons {
     display: flex;
     justify-content: space-between;
-    margin-top: 65px;
 }
 
 
@@ -47,8 +46,23 @@ body {
     background-color: transparent;
     border-radius: 80px;
     border-color: transparent;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow:-1px 1px #ef3550,
+                -2px 2px #f48fb1,
+                -3px 3px #7e57c2,
+                -4px 4px #2196f3,
+                -5px 5px #26c6da,
+                -6px 6px #43a047,
+                -7px 7px #eeff41,
+                -8px 8px #f9a825,
+                -9px 9px #ff5722;
+    margin-top: 30px;
+    margin-left: 5px;
+
 }
 
 
@@ -61,12 +75,29 @@ body {
 
 #gridButton {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: 600;
+    font-weight: 800;
     width: 150px;
     height: 150px;
     background-color: transparent;
     border-radius: 80px;
     border-color: transparent;
+    margin-top: 30px;
+    font-family: sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow:-1px 1px #ef3550,
+                -2px 2px #f48fb1,
+                -3px 3px #7e57c2,
+                -4px 4px #2196f3,
+                -5px 5px #26c6da,
+                -6px 6px #43a047,
+                -7px 7px #eeff41,
+                -8px 8px #f9a825,
+                -9px 9px #ff5722;
+    margin-top: 30px;
+    padding-left: 10px;
 }
 
 a {
