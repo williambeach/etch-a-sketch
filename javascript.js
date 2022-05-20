@@ -9,7 +9,6 @@ function add16X16Grids() {
         childDiv.classList.add("grid");
         childDiv.style.width = `${width}px`;
         childDiv.style.height = `${height}px`;
-        childDiv.style.outline = "solid black";
         container.append(childDiv);
     }
     grid = document.querySelectorAll(".grid");

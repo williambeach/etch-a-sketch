@@ -42,7 +42,7 @@ body {
 
 
 #rainbowMode {
-    width: 130px;
+    width: 180px;
     height: 110px;
     background-color: transparent;
     border-radius: 80px;
@@ -62,7 +62,7 @@ body {
                 -8px 8px #f9a825,
                 -9px 9px #ff5722;
     
-    margin-left: 5px;
+   
 }
 
 
@@ -95,7 +95,6 @@ body {
                 -7px 7px #eeff41,
                 -8px 8px #f9a825,
                 -9px 9px #ff5722;
-    padding-left: 10px;
 }
 
 a {
@@ -105,5 +104,5 @@ a {
 
 
 #header {
-    height: 16vh;
+    height: 15vh;
 }
