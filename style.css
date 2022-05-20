@@ -20,26 +20,29 @@ body {
 
 #container {
     display: flex;
-    width: 750px;
-    height: 500px;
+    width: 100vh;
+    height: 64vh;
     flex-wrap: wrap;
-    flex-shrink: 0;
-    margin: 0 auto;
+    align-self: center;
+    
     
 }
+
+
 
 #buttons {
     display: flex;
     justify-content: space-between;
-    height: 25vh;
-    align-items: flex-end;
+    height: 20vh;
+    align-items: center
+
+    
     
 }
 
 
-
 #rainbowMode {
-    width: 110px;
+    width: 130px;
     height: 110px;
     background-color: transparent;
     border-radius: 80px;
@@ -60,13 +63,11 @@ body {
                 -9px 9px #ff5722;
     
     margin-left: 5px;
-
 }
 
 
 #footer {
-    margin-top: auto;
-    font-family:fantasy;
+    font-family: fantasy;
     color: white;
     text-align: center;
 }
@@ -75,7 +76,7 @@ body {
 #gridButton {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: 800;
-    width: 110px;
+    width: 130px;
     height: 110px;
     background-color: transparent;
     border-radius: 80px;

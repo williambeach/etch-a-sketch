@@ -1,12 +1,15 @@
 function add16X16Grids() {
     container = document.getElementById("container");
-    width = (750 / 16);
-    height = (500 / 16);
+    containerWidth = container.clientWidth;
+    containerHeight = container.clientHeight;
+    width = (containerWidth / 16);
+    height = (containerHeight / 16);
     for (let i = 0; i < 256; i++) {
         childDiv = document.createElement("div");
         childDiv.classList.add("grid");
         childDiv.style.width = `${width}px`;
         childDiv.style.height = `${height}px`;
+        childDiv.style.outline = "solid black";
         container.append(childDiv);
     }
     grid = document.querySelectorAll(".grid");
@@ -21,14 +24,29 @@ function add16X16Grids() {
             }
         });
     }
+    window.onresize = function() {
+        containerWidth = container.clientWidth;
+        containerHeight = container.clientHeight;
+        widthNew = (containerWidth / 16);
+        heightNew = (containerHeight / 16);
+        for (let i=0; i < grid.length;i++) {
+            grid[i].style.width = `${widthNew}px`;
+            grid[i].style.height = `${heightNew}px`;
+        }
+    }
 }
+
+
+
 
 
 function addCustomGrids(value) {
     container = document.getElementById("container");
     container.innerHTML = "";
-    width = (750 / value);
-    height = (500 / value);
+    containerWidth = container.clientWidth;
+    containerHeight = container.clientHeight;
+    width = (containerWidth / value);
+    height = (containerHeight / value);
     totalSquares = value * value;
     for (let i = 0; i < totalSquares; i++) {
         childDiv = document.createElement("div");
@@ -48,6 +66,16 @@ function addCustomGrids(value) {
                 grid[i].style.backgroundColor = randomColor;
             }
         });
+    }
+    window.onresize = function() {
+        containerWidth = container.clientWidth;
+        containerHeight = container.clientHeight;
+        widthNew = (containerWidth / value);
+        heightNew = (containerHeight / value);
+        for (let i=0; i < grid.length;i++) {
+            grid[i].style.width = `${widthNew}px`;
+            grid[i].style.height = `${heightNew}px`;
+        }
     }
 }
 
